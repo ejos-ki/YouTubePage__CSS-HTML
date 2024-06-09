@@ -1,0 +1,399 @@
+/* ----------------     HEADER  ---------------- */
+.header {
+    border: none;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: black;
+    z-index: 101;
+}
+
+@media (max-width: 1536px) {
+    .micCollapsed, .searchCollapsed {
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+@media (min-width: 1536px) {
+    .micCollapsed, .searchCollapsed {
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+
+@media (max-width: 657px) {
+    .searchbar {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .searchbar .icon {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .micCollapsed, .searchCollapsed {
+        border: solid rgba(246, 240, 240, 0);
+        border-width: 1px;
+        background-color: rgba(246, 240, 240, 0);
+        padding: 8px 0px 0px 8px;
+        fill: white;
+    
+        height: 32px;
+        width: 32px;
+        border-radius: 20px;
+        cursor: pointer;
+        
+        position: relative;
+        visibility: visible;
+    }
+
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.logo {
+    width: 180px;
+    display: flex;
+    margin-left: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    padding-bottom: 0;
+}
+
+.LOGO {
+    display: flex;
+    margin-left: 20px;
+    flex-shrink: 0;
+}
+
+.logocontainer {
+    position: relative;
+}
+
+.logocontainer .tooltip{
+    position: absolute;
+    color: white;
+    background-color: rgb(61, 59, 59);
+    font-weight: normal;
+    font-size: 12px;
+    width: auto;
+    padding: 2px 2px 2px 2px;
+    border-style: outset;
+    border-width: 1px;
+
+    visibility: hidden;
+    transition: visibility 0s
+}
+
+.logo .tooltip {
+    bottom: -25px;
+    right: -65px;
+}
+
+.logoname {
+    flex: 1;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 3px;
+    color: white;
+    position: relative;
+
+    flex-shrink: 0;
+}
+
+.logopic {
+    width: 30px;
+    height: 18px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 0px;
+    margin-top: 2px;
+}
+
+.modal {
+    padding: 0px;
+    margin: 0px;
+    background-color: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: opacity 0.15s;
+}
+
+.searchbar {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 43px 43px;
+    margin-left: 10%;
+    margin-right: 10%;
+    max-width: 630px;
+}
+
+.bar {
+    margin-right: 18px;
+    flex: 1;
+    z-index: 2;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 6px;
+    left: 15px;
+    visibility: visible;
+}
+
+.search, .mic {
+    margin-left: 15px;
+}
+
+.search {
+    transform: scaleZ(-1);
+    margin-left: -22px;
+    background-color: rgb(78, 76, 76);
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+    padding-left: 5px;
+    height: 31px;
+    position: relative;
+}
+
+.search .tooltip {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: auto;
+    background-color: rgba(106, 104, 104, 0.9);
+    border-radius: 5px;
+    
+    bottom: -54px;
+    padding: 10px 10px 10px 10px;
+
+    color: white;
+    font-size: 12px;
+    font-weight: 1px;
+
+    visibility: hidden;
+    transition: visibility 0s 0.15s;
+}
+
+.mic {
+    background-color: rgb(78, 76, 76);
+    margin-top: 2px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mic .tooltip {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 120px;
+    background-color: rgba(106, 104, 104, 0.9);
+    border-radius: 5px;
+    
+    left: -45px;
+    bottom: -55px;
+    padding: 10px 10px 10px 10px;
+    
+
+    color: white;
+    font-size: 12px;
+    font-weight: 1px;
+
+    visibility: hidden;
+    transition: visibility 0s 0.15s;
+}
+
+.user {
+    width: 145px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.user button {
+    width: 40px;
+    height: 40px;
+}
+
+.useraccbutton {
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(246, 240, 240, 0);
+}
+
+.useracc {
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    vertical-align: top;
+    cursor: pointer;
+    border: solid rgba(205, 201, 201, 0);
+    border-width: 2px;
+}   
+
+.userbutton1, .userbutton2 {
+    border: solid rgba(246, 240, 240, 0);
+    border-width: 1px;
+    background-color: rgba(246, 240, 240, 0);
+    padding: 8px 0px 0px 8px;
+    fill: white;
+
+    height: 32px;
+    width: 32px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+    position: relative;
+}
+
+.userbutton1 svg, .userbutton2 svg {
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.modal, .mic {
+    fill: white;
+    height: 32px;
+    width: 32px;
+    border-radius: 20px;
+    padding-left: 7px;
+    padding-top: 7px;
+    cursor: pointer;
+}
+
+.userbutton1 .tooltip, .userbutton2 .tooltip {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: auto;
+    background-color: rgba(106, 104, 104, 0.9);
+    border-radius: 5px;
+    
+    bottom: -55px;
+    padding: 10px 10px 10px 10px;
+
+    color: white;
+    font-size: 12px;
+    font-weight: 1px;
+
+    visibility: hidden;
+    transition: visibility 0s 0.15s;
+}
+
+.userbutton1 .tooltip {
+    left: -10px;
+}
+
+.userbutton2 .tooltip {
+    left: -25px;
+}
+
+.createActive {
+    padding: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(51, 50, 50);
+    width: 150px;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+}
+
+.createActiveContent {
+    display: flex;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.createActiveContent p {
+    flex: 1;
+    margin: 0px;
+    padding: 0px;
+    white-space: nowrap;
+    color: white;
+}
+
+.createActiveContent svg {
+    width: 30px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 8px;
+    fill: white;
+}
+
+[popover] {
+    bottom: anchor(top);
+    left: anchor(center);
+    margin-top: 58px;
+}
+
+.notificationActive {
+    border: none;
+    border-radius: 20px;
+
+    margin-right: 80px;
+    background-color: rgb(51, 50, 50);
+    width: 399px;
+    height: 80vh;
+}
+
+.notificationActive .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-bottom: solid white;
+    border-width: 1px;
+}
+
+.notificationActive .top svg {
+    margin: 0px;
+    padding: 0px;
+    fill: white;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    border-radius: 20px;
+}
+
+.notificationActive .top .iconnotif {
+    border-radius: 20px;
+}
+

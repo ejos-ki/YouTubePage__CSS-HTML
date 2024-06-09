@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="em">
+    <head>
+        <title>     YouTube         </title>
+
+        <link rel="shortcut icon" type="x-icon" href="images/logo.png">
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="css/W1General.css">
+        <link rel="stylesheet" href="css/W1Function.css">
+        <link rel="stylesheet" href="css/W1Header.css">
+        <link rel="stylesheet" href="css/W1Content.css">
+        <link rel="stylesheet" href="css/W1ConLeft.css">
+        <link rel="stylesheet" href="css/W1ConButtons.css">
+        <link rel="stylesheet" href="css/W1Conright.css">
+    </head>
+    
+    <body class="main">
+        <div class="header">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" class="modal"> <path d="M21 6H3V5h18v1zm0 5H3v1h18v-1zm0 6H3v1h18v-1z"></path></svg>
+
+                <div class="LOGO">
+                    <div class="logocontainer">
+                        <div class="tooltip">
+                            Youtube Home
+                        </div>
+    
+                        <a href="index.html">
+                            <img class="logopic" src="images/logo.png" alt="">    
+                        </a>
+                    </div>
+                    
+                    <p class="logoname"> 
+                        <strong>    <a href="index.html"> YouTube</a> </strong>
+                        <sup> <a href="index.html">    PH  </a> </sup> 
+                    </p>
+                </div>
+            </div>
+
+            <div class="searchbar">
+                <div class="bar">
+                    <input type="text" placeholder="Search">
+
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="24"><path clip-rule="evenodd" d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909ZM18 11a7 7 0 11-14 0 7 7 0 0114 0Z" fill-rule="evenodd"></path></svg>
+                    </div>
+                </div>
+
+                <div class="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="24"><path clip-rule="evenodd" d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909ZM18 11a7 7 0 11-14 0 7 7 0 0114 0Z" fill-rule="evenodd"></path></svg>
+                
+                    <div class="tooltip">
+                        Search
+                    </div>
+                </div>
+
+                <div class="mic">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="margin: 0px; padding: 0px; width: 32px; height: 32px; padding-top: 3px; padding-left: 4px;">
+                        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z"/>
+                        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5"/>
+                    </svg> 
+
+                    <div class="tooltip">
+                        Search with your voice
+                    </div>
+                </div>
+            </div>
+
+            <div class="user">
+                <button class="searchCollapsed">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="24"><path clip-rule="evenodd" d="M16.296 16.996a8 8 0 11.707-.708l3.909 3.91-.707.707-3.909-3.909ZM18 11a7 7 0 11-14 0 7 7 0 0114 0Z" fill-rule="evenodd"></path></svg>
+                </button>
+
+                <button class="micCollapsed">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="margin: 0px; padding: 0px; width: 32px; height: 32px; padding-top: 3px; padding-left: 4px;">
+                        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z"/>
+                        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5"/>
+                    </svg> 
+                </button>
+
+                <button 
+                    class="userbutton1" 
+                    popovertarget="createPop" 
+                    id="createAnchor"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg"><path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-7H3v12h14v-6.39l4 1.83V8.56l-4 1.83V6m1-1v3.83L22 7v8l-4-1.83V19H2V5h16z"></path></svg>
+
+                    <div class="tooltip">
+                        Create
+                    </div>
+                </button>
+
+                <div 
+                    id="createPop" 
+                    popover 
+                    anchor="createAnchor"
+                    class="createActive"
+                >
+                    <div class="createActiveContent">
+                        <svg xmlns="http://www.w3.org/2000/svg"><path d="m10 8 6 4-6 4V8zm11-5v18H3V3h18zm-1 1H4v16h16V4z"></path></svg>                          
+                        
+                        <p>             Upload video        </p>
+                    </div>
+                
+                    <div class="createActiveContent">
+                        <svg xmlns="http://www.w3.org/2000/svg"><g><path d="M14 12c0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2 2 .9 2 2zM8.48 8.45l-.71-.7C6.68 8.83 6 10.34 6 12s.68 3.17 1.77 4.25l.71-.71C7.57 14.64 7 13.39 7 12s.57-2.64 1.48-3.55zm7.75-.7-.71.71c.91.9 1.48 2.15 1.48 3.54s-.57 2.64-1.48 3.55l.71.71C17.32 15.17 18 13.66 18 12s-.68-3.17-1.77-4.25zM5.65 5.63l-.7-.71C3.13 6.73 2 9.24 2 12s1.13 5.27 2.95 7.08l.71-.71C4.02 16.74 3 14.49 3 12s1.02-4.74 2.65-6.37zm13.4-.71-.71.71C19.98 7.26 21 9.51 21 12s-1.02 4.74-2.65 6.37l.71.71C20.87 17.27 22 14.76 22 12s-1.13-5.27-2.95-7.08z"></path></g></svg>
+
+                        <p>             Go live             </p>
+                    </div>
+                </div> 
+
+                <button 
+                    popovertarget="notificationPop"
+                    id="notificationAnchor"
+                    class="userbutton2"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg"><path d="M10 20h4c0 1.1-.9 2-2 2s-2-.9-2-2zm10-2.65V19H4v-1.65l2-1.88v-5.15C6 7.4 7.56 5.1 10 4.34v-.38c0-1.42 1.49-2.5 2.99-1.76.65.32 1.01 1.03 1.01 1.76v.39c2.44.75 4 3.06 4 5.98v5.15l2 1.87zm-1 .42-2-1.88v-5.47c0-2.47-1.19-4.36-3.13-5.1-1.26-.53-2.64-.5-3.84.03C8.15 6.11 7 7.99 7 10.42v5.47l-2 1.88V18h14v-.23z"></path></svg>
+
+                    <div class="tooltip">
+                        Notifications
+                    </div>
+                </button>
+
+                <div 
+                    id="notificationPop"
+                    popover
+                    anchor="notificationAnchor"
+                    class="notificationActive"
+                >
+                    <div class="top">
+                        <div class="label">
+                            Notifications
+                        </div>
+                        
+                        <div class="iconnotif">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                              </svg>
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        
+                    </div>
+                </div>
+
+                <button class="useraccbutton">
+                    <img tabindex="0"  class="useracc" src="images/jeo.png" alt="not found">
+                </button>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="buttonGroup">
+                <button class="button1">     All                                         </button>
+                <button class="button2">     That time I Got Reincarnated as a Slime     </button>
+                <button class="button3">     JavaScript                                  </button>
+                <button class="button4">     Gaming                                      </button>
+                <button class="button5">     Landing Pages                               </button>
+                <button class="button6">     Manga                                       </button>
+                <button class="button7">     User interface desing                       </button>
+                <button class="button8">     Java                                        </button>
+                <button class="button9">     Music                                       </button>
+                <button class="button10">    Portfolios                                  </button>
+                <button class="button11">    Live                                        </button>
+                <button class="button12">    News                                        </button>
+                <button class="button13">    Bodybuilding                                </button>
+            </div>
+
+            <div class="leftContent">
+                <div class="sideButtons">
+                    <div class="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="buttons"><g><path d="M4 21V10.08l8-6.96 8 6.96V21h-6v-6h-4v6H4z"></path></g></svg>
+                    </div>
+                       <p class="label"><sup>       Home                </sup></p>
+                </div>
+
+                <div class="sideButtons">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="buttons"><path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25zm-.23 5.86-8.5 4.5c-1.34.71-3.01.2-3.72-1.14-.71-1.34-.2-3.01 1.14-3.72l2.04-1.08v-1.21l-.69-.28-1.11-.46c-.99-.41-1.65-1.35-1.7-2.41-.05-1.06.52-2.06 1.46-2.56l8.5-4.5c1.34-.71 3.01-.2 3.72 1.14.71 1.34.2 3.01-1.14 3.72L15.5 9.26v1.21l1.8.74c.99.41 1.65 1.35 1.7 2.41.05 1.06-.52 2.06-1.46 2.56z"></path></svg>
+                       <p class="label"><sup>       Shorts              </sup></p>
+                </div>
+
+                <div class="sideButtons">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="buttons"><path d="M10 18v-6l5 3-5 3zm7-15H7v1h10V3zm3 3H4v1h16V6zm2 3H2v12h20V9zM3 10h18v10H3V10z"></path></svg>
+                       <p class="label"><sup>       Subscription        </sup></p>
+                </div>
+
+                <div class="sideButtons">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="buttons"><path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg>
+                       <p class="label"><sup>       You                 </sup></p>
+                </div>
+
+                <div class="sideButtons">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="buttons"><path d="M17 18v1H6v-1h11zm-.5-6.6-.7-.7-3.8 3.7V4h-1v10.4l-3.8-3.8-.7.7 5 5 5-4.9z"></path></svg>
+                       <p class="label"><sup>       Downloads           </sup></p>
+                </div>
+            </div>
+
+            <div class="rightContent">
+                <div class="innerContent">
+                    <div class="vidTime">       6:31:24         </div>
+
+                    <div>
+                        <img class="image" src="images/image1.webp" alt="">
+                    </div>
+
+                    <div class="ContentInfo">
+                        <div class="authorplace">
+                            <img class="author" src="images/author1.jpg" alt="">
+                        </div>
+
+                        <div class="Info">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg>
+                            </div>
+
+                            <p class="InfoTitle">    
+                                <strong>        
+                                    HTML & CSS Full Course - Beginner to Pro
+                                </strong>
+                            </p>
+
+                            <p class="InfoAuthor">     SuperSimpleDev      </p>
+                            
+                            <p class="InfoPublish">     10M views &centerdot; 2 years ago   </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innerContent">
+                    <div class="vidTime">
+                        24:42
+                    </div>
+
+                    <div>
+                        <img class="image" src="images/image2.webp" alt="">
+                    </div>
+
+                    <div class="ContentInfo">
+                        <div class="authorplace">
+                            <img class="author" src="images/author2.jpg" alt="">
+                        </div>
+
+                        <div class="Info">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg>
+                            </div>
+
+                            <p class="InfoTitle">     
+                                <strong>
+                                    That Time I Reincarnated as a Slime - Episode 57 (S3E09) [English Sub]
+                                </strong>
+                            </p>
+
+                            <p class="InfoAuthor">     Mouse Asia         </p>
+                            
+                            <p class="InfoPublish">     715K views &centerdot; 3 days ago  </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innerContent">
+                    <div class="vidTime">
+                        14:27
+                    </div>
+
+                    <div>
+                        <img class="image" src="images/image3.webp" alt="">
+                    </div>
+
+                    <div class="ContentInfo">
+                        <div class="authorplace">
+                            <img class="author" src="images/author3.jpg" alt="">
+                        </div>
+
+                        <div class="Info">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg>
+                            </div>
+                            
+                            <p class="InfoTitle">     
+                                <strong>
+                                    20 Programming Projects That Will Make You A God At Coding
+                                </strong>        
+                            </p>
+
+                            <p class="InfoAuthor">     The Coding Sloth        </p>
+                            
+                            <p class="InfoPublish">     251K views &centerdot; 11 days ago  </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innerContent">
+                    <div class="vidTime">
+                        12:31
+                    </div>
+
+                    <div>
+                        <img class="image" src="images/image4.webp" alt="">
+                    </div>
+
+                    <div class="ContentInfo">
+                        <div class="authorplace">
+                            <img class="author" src="images/author4.jpg" alt="">
+                        </div>
+
+                        <div class="Info">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg>
+                            </div>
+
+                            <p class="InfoTitle">    
+                                <strong>
+                                    Day in the Life of a Junior Web Developer | Taguig, Philippines
+                                </strong>
+                            </p>
+
+                            <p class="InfoAuthor">     Nerdy-Boi        </p>
+                            
+                            <p class="InfoPublish">     23K views &centerdot; 1 year ago   </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innerContent">
+                    <div class="vidTime">
+                        6:23
+                    </div>
+
+                    <div>
+                        <img class="image" src="images/image5.webp" alt="">
+                    </div>
+
+                    <div class="ContentInfo">
+                        <div class="authorplace">
+                            <img class="author" src="images/author5.jpg" alt="">
+                        </div>
+
+                        <div class="Info">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg>
+                            </div>
+
+                            <p class="InfoTitle">     
+                                <strong>
+                                    NAUGTHY WITCH DESTROY ENEMY'S POOSAY | MLLB SELENA
+                                </strong>
+                            </p>
+
+                            <p class="InfoAuthor">     Akame Mobile Legends        </p>
+                            
+                            <p class="InfoPublish">     1.3K views &centerdot; 10 hours ago   </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innerContent">
+                    <div class="vidTime">
+                        27:13
+                    </div>
+
+                    <div>
+                        <img class="image" src="images/image6.webp" alt="">
+                    </div>
+
+                    <div class="ContentInfo">
+                        <div class="authorplace">
+                            <img class="author" src="images/author6.jpg" alt="">
+                        </div>
+
+                        <div class="Info">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg>
+                            </div>
+
+                            <p class="InfoTitle">     
+                                <strong>
+                                    12 VS Code Extensions to INCREASE Productivity 2024 
+                                </strong>
+                            </p>
+
+                            <p class="InfoAuthor">     Devression         </p>
+                            
+                            <p class="InfoPublish">     479K views &centerdot; 3 months ago   </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innerContent">
+                    <div class="vidTime">
+                        12:57
+                    </div>
+
+                    <div>
+                        <img class="image" src="images/image7.webp" alt="">
+                    </div>
+
+                    <div class="ContentInfo">
+                        <div class="authorplace">
+                            <img class="author" src="images/author7.jpg" alt="">
+                        </div>
+
+                        <div class="Info">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg>
+                            </div>
+
+                            <p class="InfoTitle">     
+                                <strong>
+                                    LALAKE, NABULAG UMANO DAHIL SA STERIODS
+                                </strong>
+                            </p>
+
+                            <p class="InfoAuthor">     Doc Alvin        </p>
+                            
+                            <p class="InfoPublish">     143K views &centerdot; 1 month ago   </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innerContent">
+                    <div class="vidTime">
+                        12:12
+                    </div>
+
+                    <div>
+                        <img class="image" src="images/image8.webp" alt="">
+                    </div>
+
+                    <div class="ContentInfo">
+                        <div class="authorplace">
+                            <img class="author" src="images/author8.jpg" alt="">
+                        </div>
+
+                        <div class="Info">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg>
+                            </div>
+
+                            <p class="InfoTitle">     
+                                <strong>
+                                    CSS Tips And Tricks I Wish I Knew Before
+                                </strong>
+                            </p>
+
+                            <p class="InfoAuthor">     Lama Dev         </p>
+                            
+                            <p class="InfoPublish">     418K views &centerdot; 9 months ago   </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innerContent">
+                    <div class="vidTime">
+                        6:23
+                    </div>
+
+                    <div>
+                        <img class="image" src="images/image5.webp" alt="">
+                    </div>
+
+                    <div class="ContentInfo">
+                        <div class="authorplace">
+                            <img class="author" src="images/author5.jpg" alt="">
+                        </div>
+
+                        <div class="Info">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg>
+                            </div>
+
+                            <p class="InfoTitle">     
+                                <strong>
+                                    NAUGTHY WITCH DESTROY ENEMY'S POOSAY | MLLB SELENA
+                                </strong>
+                            </p>
+
+                            <p class="InfoAuthor">     Akame Mobile Legends        </p>
+                            
+                            <p class="InfoPublish">     1.3K views &centerdot; 10 hours ago   </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innerContent">
+                    <div class="vidTime">
+                        27:13
+                    </div>
+
+                    <div>
+                        <img class="image" src="images/image6.webp" alt="">
+                    </div>
+
+                    <div class="ContentInfo">
+                        <div class="authorplace">
+                            <img class="author" src="images/author6.jpg" alt="">
+                        </div>
+
+                        <div class="Info">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg>
+                            </div>
+
+                            <p class="InfoTitle">     
+                                <strong>
+                                    12 VS Code Extensions to INCREASE Productivity 2024 
+                                </strong>
+                            </p>
+
+                            <p class="InfoAuthor">     Devression         </p>
+                            
+                            <p class="InfoPublish">     479K views &centerdot; 3 months ago   </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innerContent">
+                    <div class="vidTime">
+                        12:57
+                    </div>
+
+                    <div>
+                        <img class="image" src="images/image7.webp" alt="">
+                    </div>
+
+                    <div class="ContentInfo">
+                        <div class="authorplace">
+                            <img class="author" src="images/author7.jpg" alt="">
+                        </div>
+
+                        <div class="Info">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg>
+                            </div>
+
+                            <p class="InfoTitle">     
+                                <strong>
+                                    LALAKE, NABULAG UMANO DAHIL SA STERIODS
+                                </strong>
+                            </p>
+
+                            <p class="InfoAuthor">     Doc Alvin        </p>
+                            
+                            <p class="InfoPublish">     143K views &centerdot; 1 month ago   </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="innerContent">
+                    <div class="vidTime">
+                        12:12
+                    </div>
+
+                    <div>
+                        <img class="image" src="images/image8.webp" alt="">
+                    </div>
+
+                    <div class="ContentInfo">
+                        <div class="authorplace">
+                            <img class="author" src="images/author8.jpg" alt="">
+                        </div>
+
+                        <div class="Info">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg"><path d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z"></path></svg>
+                            </div>
+
+                            <p class="InfoTitle">     
+                                <strong>
+                                    CSS Tips And Tricks I Wish I Knew Before
+                                </strong>
+                            </p>
+
+                            <p class="InfoAuthor">     Lama Dev         </p>
+                            
+                            <p class="InfoPublish">     418K views &centerdot; 9 months ago   </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

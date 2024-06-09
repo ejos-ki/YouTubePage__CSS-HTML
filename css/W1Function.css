@@ -1,0 +1,189 @@
+/*  --------        Header Hover        --------    */
+.modal:hover, .userbutton1:hover, .userbutton2:hover, .micCollapsed:hover, .searchCollapsed:hover {
+    color: white;
+    background-color: rgba(102, 100, 100, 0.5);
+}
+
+.modal:active, .usericon1:active, .usericon2:active{
+    color: white;
+    background-color: rgba(102, 100, 100, 0.7);
+}
+
+.LOGO:hover .tooltip {
+    visibility: visible;
+    transition: visibility 0s 1s;
+}
+
+input:focus {
+    border: 2px solid rgb(126, 146, 238);
+    outline: none;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-left: 13%;
+    padding-top: 0px;
+}
+
+input:focus + .icon {
+    visibility: visible;
+}
+
+@media (max-width: 1047.20px) {
+    input:focus {
+        padding-left: 5vw;
+    }
+    
+}
+
+@media (max-width: 960px) {
+    input:focus {
+        padding-left: 6vw;
+    }
+    
+}
+
+.searchbar .icon {
+    visibility: hidden;
+}
+
+.search:hover .tooltip {
+    visibility: visible;
+}
+
+.search .tooltip:hover {
+    cursor: context-menu;
+    visibility: hidden;
+    transition: visibility 0s 0s;
+}
+
+.mic:hover {
+    background-color: rgba(187, 183, 183, 0.5);
+}
+
+.mic:hover .tooltip{
+    visibility: visible;
+}
+
+.mic .tooltip:hover {
+    cursor: context-menu;
+    visibility: hidden;
+    transition: visibility 0s 0s;
+}
+
+.user .tooltip:hover {
+    cursor: context-menu;
+    visibility: hidden;
+    transition: visibility 0s 0s;
+}
+
+.userbutton1:hover .tooltip, .userbutton2:hover .tooltip {
+    visibility: visible;
+}
+
+.userbutton1 .tooltip:hover, .userbutton2 .tooltip:hover {
+    cursor: context-menu;
+    visibility: hidden;
+    transition: visibility 0s 0s;
+}
+
+.useracc:focus {
+    border: 2px solid lightblue;
+}
+
+.createActiveContent:hover {
+    background-color: rgba(187, 183, 183, 0.2);
+    cursor: pointer;
+}
+
+.createActiveContent:active {
+    background-color: rgba(187, 183, 183, 0.5);
+}
+
+.userbutton1:active, .userbutton2:active, .micCollapsed:active, .searchCollapsed:active {
+    background-color: rgba(238, 236, 236, 0.3);
+    border: 1px solid rgba(238, 236, 236, 0.3);
+}
+
+.userbutton1:active .tooltip, .userbutton1:active .tooltip{
+    visibility: hidden;
+}
+
+.notificationActive .iconnotif:hover {
+    background-color: rgba(102, 100, 100, 0.5);
+    cursor: pointer;
+}
+
+
+
+
+/*  --------    Content buttons     --------    */
+.sideButtons:hover {
+    border-radius: 8px;
+    background-color: rgba(102, 100, 100, 0.5);
+}
+
+.sideButtons:active {
+    border-radius: 8px;
+    background-color: rgba(102, 100, 100, 0.7);
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover,
+.button4:hover,
+.button5:hover,
+.button6:hover,
+.button7:hover,
+.button8:hover,
+.button9:hover,
+.button10:hover,
+.button11:hover,
+.button12:hover,
+.button13:hover
+{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.button1:focus,
+.button2:focus,
+.button3:focus,
+.button4:focus,
+.button5:focus,
+.button6:focus,
+.button7:focus,
+.button8:focus,
+.button9:focus,
+.button10:focus,
+.button11:focus,
+.button12:focus,
+.button13:focus
+{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+/*  --------    Content Rightcontent     --------    */
+.image:hover {
+    border-radius: 0px;
+}
+
+.innerContent:hover .vidTime {
+    opacity: 0;
+}
+
+.innerContent:hover .image {
+    border-radius: 0px;
+}
+
+.InfoAuthor:hover {
+    color: white;
+}
+
+.Info:hover .icon {
+    opacity: 1;
+}
+

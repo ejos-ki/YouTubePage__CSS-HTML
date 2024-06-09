@@ -1,0 +1,46 @@
+
+/* ----------------     BUTTONS  ---------------- */
+.buttonGroup {
+    height: 30px;
+    overflow: hidden;
+
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: black;
+
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-left: 20px;
+
+    padding-right: 20px;
+    margin-left: 70px;
+}
+
+@media (max-width: 789px) {
+    .buttonGroup {
+       margin-left: 0px;
+       padding-left: 20px;
+       padding-right: 20px;
+    }
+}
+
+.buttonGroup button {
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;
+
+    border-radius: 8px;
+    width: auto;
+    padding: 1px 10px 1px 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    margin-right: 10px;
+}
