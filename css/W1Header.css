@@ -66,6 +66,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .user {
+       position: absolute;
+       right: 10%;
+    }
 }
 
 .logo {
